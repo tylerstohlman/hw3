@@ -1,15 +1,14 @@
 <h1><%= @place.name %></h1>
+<h2>Posts</h2>
 
 <ul>
-  <% for post in @place.posts %>
-    <li><%= "#{post.name}" %></li>
-  <% end %>
+    <% for post in @place.posts %>
+    <li><%= post.title %></li>
+    <% end %>
 </ul>
-
 <p>
-  <a href="/posts/new?place_id=<%= @place.id %>">New Post</a>
+<a href="/posts/new/new?place_id <%= @place.id %>">Create new post </a>
 </p>
-
-<p><a href="/posts">Back to All Places</a></p>
-
-<p><%= button_to "Delete this place", @place, method: :delete %></p>
+<p>
+    <a href="/places">Go back to all places</a>
+</p> 

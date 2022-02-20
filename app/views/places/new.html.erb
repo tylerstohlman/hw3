@@ -1,15 +1,7 @@
 <%= form_with model: @place do |form| %>
   <p>
-    <%= form.label "title", "Place" %>
-    <%= form.text_field "title" %>
-  </p>
-  <p>
-    <%= form.label "description" %>
-    <%= form.text_field "description" %>
-  </p>
-  <p>
-    <%= form.label "posted_on", "Post Date" %>
-    <%= form.date_field "posted_on" %>
+    <%= form.label "name", "Place" %>
+    <%= form.text_field "name" %>
   </p>
 
   <%= form.submit %>
