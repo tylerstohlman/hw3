@@ -2,9 +2,11 @@
 
 <ul>
     <% for post in @place.posts %>
-    <%= "#{post.title}" %>
+    <h2><%= "#{post.title}" %></h2>
     <%= "#{post.posted_on}" %>
+    <p>
     <%= "#{post.description}" %>
+    </p>
 
     <% end %>
 </ul>
